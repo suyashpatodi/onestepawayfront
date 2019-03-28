@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script>
+    $(document).ready(function(){
+    // Call Geo Complete
+    $("#address").geocomplete({details:"form#property"});
+                                });
+
+    </script>
+    <style>
+
+
+
+
+
+
+
+
+.register{
+    background-image: url(" {{ url_for('static',filename='img/registerb.jpg') }}");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    /*: -webkit-linear-gradient(yellowgreen, yellowgreen);*/
+    margin-top: 3%;
+    padding: 3%;
+}
+.register-left{
+    text-align: center;
+    margin-top: 5%;
+}
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+ 
+    font-weight: bold;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: white;
+    color: black;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: black;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: black;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: black;
+    border: 2px solid springgreen
+    ;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;}
+
+    @media (min-width: 1200px) {
+        .navbar {
+        background:transparent;
+        height: 50px;
+        }
+    .tales {
+            width: 100%;
+          }
+   
+
+
+
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Business Account Registration</title>
+  </head>
+  <body>
+    <nav  class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#" style="font-size: 25px">
+    <img src=" {{ url_for('static',filename='img/se.jpg') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+   <b><i>OneStepAway</i></b>
+  </a>
+   <ul class="nav justify-content-end">
+
+  <ul class="nav nav-pills">
+  <li class="nav-item">
+   <i> <a class="nav-link" href="#" style="color: black ; font-size: 17px">Home</a></i>
+  </li><li class="nav-item">
+   <i> <a class="nav-link" href="#" style="color: black ; font-size: 17px">Why us?</a></i>
+  </li>
+  <li class="nav-item">
+     <i><a class="nav-link" href="#" style="color: black ; font-size: 17px">Contact</a></i>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">dropdown</a>
+    <div class="dropdown-menu">
+       <i><a class="dropdown-item" href="#" >My Profile</a></i>
+       <i><a class="dropdown-item" href="#">History</a></i>
+       <i><a class="dropdown-item" href="#">Settings</a></i>
+      <div class="dropdown-divider"></div>
+       <i><a class="dropdown-item" href="#">Logout</a></i>
+    </div>
+  </li>
+  
+  
+</ul>
+</ul>
+
+</nav>
+        <div class="container register ">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        
+                        <h3 style="font-size: 40px"><b><i>Welcome</h3>
+                        <p>Register your account here !</i></b></p>
+                        <br/>
+                    </div>
+                    <form action="/registerb" id="property" method="POST" enctype="multipart/form-data">
+                        <div class="tab-content " id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <b><i><h3 class="register-heading">APPLY AS SERVICE</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            Your Name<input type="text" class="form-control" placeholder="Enter Name*" name="oname" />
+                                        </div>
+                                        <div class="form-group">
+                                            Business Name <input type="text" class="form-control" placeholder=" Enter Business Name *" name="bname" />
+                                        </div>
+                                        <div class="form-group">
+                                                    Password<input type="password" class="form-control" placeholder="Enter Password *" name="opassword" />
+                                        </div>
+                                        <div class="form-group">
+                                            Confirm Password<input type="password" class="form-control"  placeholder="Enter Confirm Password *" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            Email id<input type="email" class="form-control" placeholder="Enter Email-id *" name="oemailid" />
+                                        </div>
+                                        <div class="form-group">
+                                            Phone Number<input type="text" minlength="10" maxlength="10" class="form-control input-lg" placeholder="Enter Phone no. *" name="ocontact" />
+                                        </div>
+                                        <div class="form-group">
+                                                 Business Category:<select class="form-control" name="oservice">
+                                                <option class="hidden"  >Please select your Service</option>
+                                                <option>Plumber</option>
+                                                <option>Technician</option>
+                                                <option>Tutor</option>
+                                                <option>Others</option>
+                                            </select>
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                            Describe Your Business<textarea name="odescribe"  cols="30">
+                                                
+                                            </textarea>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            Address<input type="text" class="form-control" placeholder="Enter your Address *" id="address"  name="oaddress" />
+                                        </div>
+        
+                                        <div class="form-group">
+                                                
+                                            <label for="File1">Add Photo</label>
+                                            <input type="file" class="form-control-file" name="file1">
+                                        </div>
+                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                    </div>
+                                </div>
+                            </div></i></b>
+                           
+           
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+            </div>
+
+    
+  </body>
+</html>

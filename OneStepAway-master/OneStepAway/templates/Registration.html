@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>Registration Page</title>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+      @import "compass/css3";
+
+
+  </style>
+  </head>
+  <body>
+    
+        <nav  class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#" style="font-size: 25px">
+    <img src="step.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+   <b><i>OneStepAway</i></b>
+  </a>
+   <ul class="nav justify-content-end">
+
+  <ul class="nav nav-pills">
+  <li class="nav-item">
+   <i> <a class="nav-link" href="#" style="color: black ; font-size: 17px">Home</a></i>
+  </li><li class="nav-item">
+   <i> <a class="nav-link" href="#" style="color: black ; font-size: 17px">Why us?</a></i>
+  </li>
+  <li class="nav-item">
+     <i><a class="nav-link" href="#" style="color: black ; font-size: 17px">Contact</a></i>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">dropdown</a>
+    <div class="dropdown-menu">
+       <i><a class="dropdown-item" href="#" >My Profile</a></i>
+       <i><a class="dropdown-item" href="#">History</a></i>
+       <i><a class="dropdown-item" href="#">Settings</a></i>
+      <div class="dropdown-divider"></div>
+       <i><a class="dropdown-item" href="#">Logout</a></i>
+    </div>
+  </li>
+  
+  
+</ul>
+</ul>
+
+</nav>
+    
+    <h1 align="center">Choose your Account!</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-6">
+            <div class="card border-success mb-3" >
+              <div class="card-block" >
+                  <a href="{{ url_for('registeru') }}">
+                <img src="C:\Users\Administrator\Desktop\new_proj\extra\NextToYou\templates\portrait-of-businessman-in-office-1_1262-1487.jpg" class="card-img-top img-fluid">
+                </a>
+               
+ <h3 class="card-title text-center">User Account</h3>
+                <p><i> <b>*For services and keep track of them !</p>
+                <p>*Build contacts, Search by location </p></i></b>
+                
+              </div>
+              
+            </div>
+        </div>
+        <div class="col-md-10 col-lg-6">
+            <div class="card border-success mb-3">
+              <div class="card-block">
+                  <a href="{{ url_for('registerb') }}">
+                <img src="{{ url_for('static',filename='img/user.jpg') }}" class="card-img-top img-fluid">
+                </a>
+                 <h3 class="card-title text-center">Business Account</h3>
+                 <p><i> <b>*Promote your Service on our website!</p></i></b>
+                 <i><b><p>*Track customers and manage your account to know more about them ! </p></i></b>
+               
+
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </div>
+   
+  </body>
+</html>
