@@ -17,43 +17,16 @@
     <style>
       @import "compass/css3";
 
-
+body{
+  background-color: #232122;
+}
   </style>
   </head>
   <body>
+    {% extends "layout.html" %}
+{% block body %}
     
-        <nav  class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#" style="font-size: 25px">
-    <img src="step.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-   <b><i>OneStepAway</i></b>
-  </a>
-   <ul class="nav justify-content-end">
-
-  <ul class="nav nav-pills">
-  <li class="nav-item">
-   <i> <a class="nav-link" href="#" style="color: black ; font-size: 17px">Home</a></i>
-  </li><li class="nav-item">
-   <i> <a class="nav-link" href="#" style="color: black ; font-size: 17px">Why us?</a></i>
-  </li>
-  <li class="nav-item">
-     <i><a class="nav-link" href="#" style="color: black ; font-size: 17px">Contact</a></i>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">dropdown</a>
-    <div class="dropdown-menu">
-       <i><a class="dropdown-item" href="#" >My Profile</a></i>
-       <i><a class="dropdown-item" href="#">History</a></i>
-       <i><a class="dropdown-item" href="#">Settings</a></i>
-      <div class="dropdown-divider"></div>
-       <i><a class="dropdown-item" href="#">Logout</a></i>
-    </div>
-  </li>
-  
-  
-</ul>
-</ul>
-
-</nav>
+       
     
     <h1 align="center">Choose your Account!</h1>
     <div class="container">
@@ -90,6 +63,6 @@
         </div>
       </div>
     </div>
-   
+   {% endblock %}
   </body>
 </html>

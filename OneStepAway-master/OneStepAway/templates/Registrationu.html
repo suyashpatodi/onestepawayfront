@@ -123,7 +123,7 @@
 
 
     </style>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Optional JavaScript -->
@@ -131,42 +131,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Business Account Registration</title>
+    <style>
+        body{
+            background-color: #232122;
+        }
+    </style>
+    <title>User Account Registration</title>
   </head>
   <body>
-    <nav  class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#" style="font-size: 25px">
-    <img src="step.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-   <b><i>OneStepAway</i></b>
-  </a>
-   <ul class="nav justify-content-end">
-
-  <ul class="nav nav-pills">
-  <li class="nav-item">
-   <i> <a class="nav-link" href="#" style="color: black ; font-size: 17px">Home</a></i>
-  </li><li class="nav-item">
-   <i> <a class="nav-link" href="#" style="color: black ; font-size: 17px">Why us?</a></i>
-  </li>
-  <li class="nav-item">
-     <i><a class="nav-link" href="#" style="color: black ; font-size: 17px">Contact</a></i>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">dropdown</a>
-    <div class="dropdown-menu">
-       <i><a class="dropdown-item" href="#" >My Profile</a></i>
-       <i><a class="dropdown-item" href="#">History</a></i>
-       <i><a class="dropdown-item" href="#">Settings</a></i>
-      <div class="dropdown-divider"></div>
-       <i><a class="dropdown-item" href="#">Logout</a></i>
-    </div>
-  </li>
-  
-  
-</ul>
-</ul>
-
-</nav>
-        <div class="container register ">
+   {% extends "layout.html" %}
+        {% block body %}
+        <div class="container register fadeInDown animated">
                 <div class="row">
                     <div class="col-md-3 register-left">
                         
@@ -186,6 +161,7 @@
                                         <div class="form-group">
                                                     Password<input type="password" class="form-control" placeholder="Enter Password *" name="opassword" />
                                         </div>
+                                        
                                         <div class="form-group">
                                             Confirm Password<input type="password" class="form-control"  placeholder="Enter Confirm Password *" value="" />
                                         </div>
@@ -235,6 +211,6 @@
 
             </div>
 
-    
+    {% endblock %}
   </body>
 </html>

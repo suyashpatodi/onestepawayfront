@@ -1,5 +1,57 @@
 <!-- USING JINJA TEMPLATE BY MAKING BLOCKS ADD FOOTER AND HEADER TO EACH PAGE
 IN THIS PAGE WRITE THE CODE FOR HEADER AND FOOTER AND THEN INHERIT IN EACH OF THEM
--->
+--><header>
+  <head>
+    <style>
+    .nav_bar_test{
+    opacity: 0.5;
+background-color: black;
+}
 
+    </style>
+  </head>
+ <nav  class="navbar nav_bar_test">
+        <a class="navbar-brand" href="#" style="font-size: 25px; color: white ;">
+    <img src="step.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+   <b><i>OneStepAway</i></b>
+  </a>
+   <ul class="nav justify-content-end">
+
+  <ul class="nav nav-pills">
+  <li class="nav-item">
+   <i> <a class="nav-link" href="{{ url_for('home') }}" style="color: white ; font-size: 17px">Home</a></i>
+  </li>
+ <li class="nav-item">
+   <i> <a class="nav-link" href="#" style="color: white ; font-size: 17px">Why us?</a></i>
+  </li>
+   <li class="nav-item">
+   <i> <a class="nav-link" href="{{ url_for('login') }}" style="color: white ; font-size: 17px">Login</a></i>
+  </li>
+  <li class="nav-item">
+   <i> <a class="nav-link" href="{{ url_for('register') }}" style="color: white ; font-size: 17px">Register</a></i>
+  </li>
+  <li class="nav-item">
+     <i><a class="nav-link" href="#" style="color: white ; font-size: 17px">Contact</a></i>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">dropdown</a>
+    <div class="dropdown-menu">
+       <i><a class="dropdown-item" href="#" >My Profile</a></i>
+       <i><a class="dropdown-item" href="#">History</a></i>
+       <i><a class="dropdown-item" href="#">Settings</a></i>
+      <div class="dropdown-divider"></div>
+       <i><a class="dropdown-item" href="#">Logout</a></i>
+    </div>
+  </li>
+  
+  
+</ul>
+</ul>
+
+</nav>
+</header>
+
+{% block body %}
+  
+{% endblock %}
 
